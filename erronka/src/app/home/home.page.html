@@ -6,44 +6,44 @@
 
 <ion-content [fullscreen]="true" color="success">
   <ion-header collapse="condense">
-    <ion-toolbar color="success">
-      <ion-title size="large">Hasiera</ion-title>
-    </ion-toolbar>
+    <ion-header>
+      <ion-toolbar color="success">
+        <ion-buttons slot="start">
+          <ion-menu-button></ion-menu-button>
+        </ion-buttons>
+        <ion-title>Hasiera</ion-title>
+      </ion-toolbar>
+    </ion-header>
   </ion-header>
 
   <ion-card>
     <ion-card-header>
-      <ion-card-title class="ion-text-center"
-        >ARRIGORRIAGA KANPINA</ion-card-title>
-      <ion-card-subtitle class="ion-text-center"
-        >EUKAL KANPINEN ANDIENA</ion-card-subtitle>
+      <ion-card-title class="ion-text-center">ARRIGORRIAGA KANPINA</ion-card-title>
+      <ion-card-subtitle class="ion-text-center">EUKAL KANPINEN HANDIENA</ion-card-subtitle>
     </ion-card-header>
     <ion-card-content>
-      <img
-        alt="Argazkia Arrigorriaga"
-        src="../../assets/images/ilbarritz.jpg"
-      />
+      <img alt="Argazkia Arrigorriaga" src="../../assets/images/ilbarritz.jpg" />
       Arrigorriagako kanpina ingurune natural eta lasaia eskaintzen du,
       deskonektatu nahi dutenentzat aproposa.
     </ion-card-content>
   </ion-card>
 
   <ion-card class="ion-text-center">
-    <ion-card-content
-      >Instalazio erosoekin eta aire zabaleko jardueretarako sarbidearekin, ezin
+    <ion-card-content>Instalazio erosoekin eta aire zabaleko jardueretarako sarbidearekin, ezin
       hobea da naturaz gozatzeko, hiritik gehiegi urrundu gabe.
     </ion-card-content>
-    <br/>
-    <ion-card-content
-      >Arrigorriagako kanpina leku ezin hobea da naturaz eta lasaitasunaz
+    <br />
+    <ion-card-content>Arrigorriagako kanpina leku ezin hobea da naturaz eta lasaitasunaz
       gozatzeko, eta espazio erosoak eskaintzen ditu kanpatzeko eta inguruak
       esploratzeko.
     </ion-card-content>
   </ion-card>
 
   <div class="ion-text-center">
-    <ion-button>Erreserbak</ion-button>
-    <ion-button>Mapa</ion-button>
-    <ion-button>Zerbitzuak</ion-button>
+    <ion-button [routerLink]="['/erreserbak']">Erreserbak</ion-button>
+    <ion-button [routerLink]="['/zerbitzuak']">Zerbitzuak</ion-button>
+    <ion-button id="present-alert">Kontaktatu</ion-button>
+    <ion-alert trigger="present-alert" header="Kontaktatu" subHeader="Guri kontaktatzeko baliabideak"
+      message="Telefonoa: +34 693 69 29 20 Emaila: arrigorriaga@kamp.eus" [buttons]="alertButtons"></ion-alert>
   </div>
 </ion-content>

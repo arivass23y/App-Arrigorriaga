@@ -6,6 +6,7 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./erreserbak.page.scss'],
 })
 export class ErreserbakPage implements OnInit {
+alertButtons: any;
 
   constructor() { }
 
