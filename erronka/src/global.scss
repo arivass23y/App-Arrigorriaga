@@ -37,7 +37,7 @@
 @import "@ionic/angular/css/palettes/dark.system.css";
 
 ion-card{
-    --background: black;
+    --background: rgb(13, 62, 5);
 }
 
 ion-card-content,ion-card-title{
@@ -45,7 +45,8 @@ ion-card-content,ion-card-title{
 }
 
 ion-button{
-    --background: black;
+    --background: rgb(7, 48, 0);
     --color: white;
     --background-activated: rgb(59, 59, 59);
+    --background-hover: rgb(59, 59, 59);
 }

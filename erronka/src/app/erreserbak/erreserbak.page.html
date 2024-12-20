@@ -16,73 +16,99 @@
     </ion-header>
   </ion-header>
 
-  <div>
-    <ion-card id="present-alert">
-      <img alt="Silhouette of mountains" src="../../assets/images/bungalow.jpg" />
-      <ion-card-header>
-        <ion-card-title>Bungalow-ak</ion-card-title>
-        <ion-card-subtitle>Premium eta Standard</ion-card-subtitle>
-      </ion-card-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card (click)="showMessage()">
+          <img alt="Bungalow argazkia" src="../../assets/images/bungalow.jpg" />
+          <ion-card-header>
+            <ion-card-title>Bungalow-ak</ion-card-title>
+            <ion-card-subtitle>Premium eta Standard</ion-card-subtitle>
+          </ion-card-header>
 
-      <ion-card-content class="ion-text-justify">
-        Bungalowak etxebizitza abegikorrak dira, normalean solairu bakarrekoak,
-        erosotasuna eta irisgarritasuna bilatzen dutenentzat aproposak inguru
-        lasai batean.
-      </ion-card-content>
-    </ion-card>
-    <ion-alert trigger="present-alert" header="Abisua" subHeader="Ezin dira erreserbak egin"
-      message="Ezin dira erreserbak egin momentu honetan, mesedez bueltatu bezte momentu batean." [buttons]="alertButtons"></ion-alert>
+          <ion-card-content class="ion-text-justify">
+            Bungalowak etxebizitza abegikorrak dira, normalean solairu
+            bakarrekoak, erosotasuna eta irisgarritasuna bilatzen dutenentzat
+            aproposak inguru lasai batean.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
 
-    <ion-card>
-      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-      <ion-card-header>
-        <ion-card-title>Partzelak</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      </ion-card-header>
+      <ion-col>
+        <ion-card (click)="showMessage()">
+          <img
+            alt="Partzela argakazkia"
+            src="../../assets/images/patzelak.jpg"
+          />
+          <ion-card-header>
+            <ion-card-title>Partzelak</ion-card-title>
+            <ion-card-subtitle>Kalitate hoberenak</ion-card-subtitle>
+          </ion-card-header>
 
-      <ion-card-content>
-        Here's a small text description for the card content. Nothing more,
-        nothing less.
-      </ion-card-content>
-    </ion-card>
+          <ion-card-content>
+            Erreserbatu itzalarekin, korronte-hartunearekin eta naturaz
+            inguratuta lasaitzeko leku zabala.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
 
-    <ion-card>
-      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-      <ion-card-header>
-        <ion-card-title>Karabana</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      </ion-card-header>
+      <ion-col>
+        <ion-card (click)="showMessage()">
+          <img
+            alt="Karabana argakazkia"
+            src="../../assets/images/caravana.jpg"
+          />
+          <ion-card-header>
+            <ion-card-title>Karabana</ion-card-title>
+            <ion-card-subtitle>Edozein motatakoak</ion-card-subtitle>
+          </ion-card-header>
 
-      <ion-card-content>
-        Here's a small text description for the card content. Nothing more,
-        nothing less.
-      </ion-card-content>
-    </ion-card>
+          <ion-card-content>
+            Ezagutu karabanentzako eremu zabalak, ur, argindar eta zerbitzu
+            gertuak dituztenak.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 
-    <ion-card>
-      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-      <ion-card-header>
-        <ion-card-title>Autokarabana</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      </ion-card-header>
+  <ion-grid>
+    <ion-row>
+      <ion-col>
+        <ion-card (click)="showMessage()">
+          <img
+            alt="Autokarabana argakazkia"
+            src="../../assets/images/autokarabana.jpg"
+          />
+          <ion-card-header>
+            <ion-card-title>Autokarabana</ion-card-title>
+            <ion-card-subtitle>Mota askotarikoak</ion-card-subtitle>
+          </ion-card-header>
 
-      <ion-card-content>
-        Here's a small text description for the card content. Nothing more,
-        nothing less.
-      </ion-card-content>
-    </ion-card>
+          <ion-card-content>
+            Autokarabanentzako espazio esklusiboak, egonaldi perfekturako
+            beharrezko erosotasun guztiekin.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
 
-    <ion-card>
-      <img alt="Silhouette of mountains" src="https://ionicframework.com/docs/img/demos/card-media.png" />
-      <ion-card-header>
-        <ion-card-title>Furgoneta</ion-card-title>
-        <ion-card-subtitle>Card Subtitle</ion-card-subtitle>
-      </ion-card-header>
+      <ion-col>
+        <ion-card (click)="showMessage()">
+          <img
+            alt="Furgoneta argakazkia"
+            src="../../assets/images/furgoneta.jpg"
+          />
+          <ion-card-header>
+            <ion-card-title>Furgoneta</ion-card-title>
+            <ion-card-subtitle>Handiak eta txikiak</ion-card-subtitle>
+          </ion-card-header>
 
-      <ion-card-content>
-        Here's a small text description for the card content. Nothing more,
-        nothing less.
-      </ion-card-content>
-    </ion-card>
-  </div>
+          <ion-card-content>
+            Camper furgonetentzako eremu esklusiboa, lasaitasuna bilatzen duten
+            bidaiari ausartentzat diseinatua.
+          </ion-card-content>
+        </ion-card>
+      </ion-col>
+    </ion-row>
+  </ion-grid>
 </ion-content>

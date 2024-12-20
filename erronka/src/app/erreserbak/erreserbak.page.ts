@@ -1,4 +1,5 @@
 import { Component, OnInit } from '@angular/core';
+import { ToastController } from '@ionic/angular';
 
 @Component({
   selector: 'app-erreserbak',
@@ -6,11 +7,19 @@ import { Component, OnInit } from '@angular/core';
   styleUrls: ['./erreserbak.page.scss'],
 })
 export class ErreserbakPage implements OnInit {
-alertButtons: any;
 
-  constructor() { }
+  constructor(private toastController: ToastController) {}
+
+  async showMessage() {
+    const toast = await this.toastController.create({
+      message: 'Momentu honetan ezin dira erreserbarik egin.',
+      duration: 4000,
+      position: 'bottom',
+    });
+
+    await toast.present();
+  }
 
   ngOnInit() {
   }
-
 }
